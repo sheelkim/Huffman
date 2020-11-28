@@ -10,6 +10,8 @@ typedef struct Noeud{
 
 typedef struct Noeud *Arbre;
 
+Noeud* creer_noeud(char lettre, int occurrence);
+void afficher_noeud(Arbre arbre);
 
 
 #endif // ARBRE_H
