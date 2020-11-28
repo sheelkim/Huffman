@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "huffman.h"
+#include "Huffman\huffman.h"
 
 int main()
 {
