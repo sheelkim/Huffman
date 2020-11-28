@@ -5,5 +5,10 @@
 
 void creer_element(Liste element)
 {
-    
+
+}
+
+void ajouter_element(Liste* liste, Element* element)
+{
+
 }
