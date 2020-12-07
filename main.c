@@ -4,6 +4,7 @@
 
 int main()
 {
+    printf("Success");
     return 0;
 }
 
