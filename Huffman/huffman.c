@@ -37,7 +37,6 @@ Arbre arbre_huffman(Liste liste)
     return NULL;
 }
 
-/// on veut modifier la liste donc on fait un double pointeur pour liberer en utilisant free
 Noeud* petit_element(Element **liste)
 {
     return NULL;

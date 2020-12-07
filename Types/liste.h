@@ -10,9 +10,8 @@ typedef struct Element{
 
 typedef struct Element *Liste;
 
-void creer_element(Liste element);
-void ajouter_element(Liste* liste, Element* element);
-
+Element* creer_element(Noeud* noeud);
+extern void afficher_liste(Liste liste);
 
 #endif // LISTE_H
 
