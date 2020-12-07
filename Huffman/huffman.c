@@ -7,7 +7,6 @@
 /// A
 void caractere_binaire(char ch, char bit[9])
 {
-
 }
 
 void ecriture_texte(char *fichier1, char *fichier2)
@@ -18,6 +17,7 @@ void ecriture_texte(char *fichier1, char *fichier2)
 
 int compter_caractere(char *fichier)
 {
+    return 0;
 }
 
 
@@ -26,7 +26,7 @@ int compter_caractere(char *fichier)
 ///C
 Liste occurrence_texte(char *fichier)
 {
-
+    return NULL;
 }
 
 
@@ -34,11 +34,11 @@ Liste occurrence_texte(char *fichier)
 
 Arbre arbre_huffman(Liste liste)
 {
-
+    return NULL;
 }
 
 /// on veut modifier la liste donc on fait un double pointeur pour liberer en utilisant free
 Noeud* petit_element(Element **liste)
 {
-
+    return NULL;
 }
