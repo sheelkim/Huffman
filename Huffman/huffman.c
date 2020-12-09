@@ -3,7 +3,6 @@
 
 #include "huffman.h"
 
-
 /// Partie 1
 
 /// A
@@ -21,14 +20,14 @@ void ecriture_texte(char *fichier1, char *fichier2)
 {
         FILE *lecture = fopen(fichier1, "r");
     FILE *ecriture = fopen(fichier2, "w");
-    
+
    if (lecture == NULL || ecriture == NULL)
         exit(EXIT_FAILURE);
-        
+
     char ch;
     char bit[9];
- 
-    
+
+
     while ((ch = fgetc(lecture)) != EOF) /// fgetc pour lire un caractère
     {
         caractere_binaire(ch, bit);
@@ -42,19 +41,19 @@ void ecriture_texte(char *fichier1, char *fichier2)
 
 int compter_caractere(char *fichier)
 {
-        FILE *fichier = fopen(fichier, "r");
+    FILE *f = fopen(fichier, "r");
     char caractere;
     int cmp = 0;
-    
-    if(fichier == NULL)
+
+    if(f == NULL)
         exit(EXIT_FAILURE);
 
-    while(((caractere) = fgetc(fichier)) != EOF)
+    while(((caractere) = fgetc(f)) != EOF)
     {
         cmp++;
     }
 
-    fclose(fichier);
+    fclose(f);
 
     return cmp;
 }
@@ -67,20 +66,20 @@ Liste occurrence_texte(char *fichier)
     FILE *f = fopen(fichier, "r");
     if(f == NULL)
         exit(EXIT_FAILURE);
-     
+
     Liste liste;
     Element *tmp = NULL;
-    
+
     char caractere;
-    while (caractere = fgetc(f) != EOF)
+    while ((caractere = fgetc(f)) != EOF)
     {
         tmp = liste;
-     
+
         while (tmp != NULL && tmp->noeud->lettre != caractere)
         {
             tmp = tmp->suiv;
         }
-        
+
         if(tmp->noeud->lettre != caractere)
         {
             Element* nouv_element = creer_element(creer_noeud(caractere, 1));
@@ -93,7 +92,7 @@ Liste occurrence_texte(char *fichier)
         }
     }
 
-    fclose(f); 
+    fclose(f);
     return liste;
 }
 
@@ -101,30 +100,32 @@ Liste occurrence_texte(char *fichier)
 /// D
 Arbre arbre_huffman(Liste liste)
 {
-    if(liste != NULL)
-    {
+    if(liste == NULL)
+        exit(EXIT_FAILURE);
+
         Arbre arbre = liste->noeud; /// on rentre dans l'arbre le premier noeud
         Noeud *noeud1 = NULL; /// 2 noeud pour 1 arbre binaire
         Noeud *noeud2 = NULL;
-        
+
         while (liste->suiv != NULL)
         {
             noeud1 = petit_element(&liste);
             noeud2 = petit_element(&liste);
-            
+
             /// on ne met pas de lettre mais juste le nombre de noeud cf consigne huffman
-            Element *noeud = creer_noeud(0, noeud1->occurrence + noeud2->occurrence);
+            arbre = creer_noeud(0, noeud1->occurrence + noeud2->occurrence);
             arbre->gauche = noeud1;
             arbre->droit = noeud2;
-            
-            Element* element = creer_element(noeud);
+
+            Element* element = creer_element(arbre);
             element->suiv = liste;
             liste = element;
         }
 
         free(liste);
+
         return arbre;
-    }
+
 }
 
 /// pour trouver le plus petit element
@@ -137,7 +138,7 @@ Noeud* petit_element(Liste *liste)
 
         Liste *tmp = liste;
         Liste *petit = tmp;
-        
+
         while (*tmp != NULL)
         {
             if((*petit)->noeud->occurrence > (*tmp)->noeud->occurrence)
@@ -146,14 +147,21 @@ Noeud* petit_element(Liste *liste)
             }
             tmp = &(*tmp)->suiv;
         }
-        
+
         Noeud *noeud = (*petit)->noeud;
         Element *ancien = *petit;
         *petit = (*petit)->suiv;
         free(ancien);
-        
-        return noeud;
-    
-}
 
-// E
+        return noeud;
+
+}
+/*
+///E 
+void dictionnaire_arbre(Arbre arbre, )
+{
+    if (arbre == NULL)
+        return exit(EXIT_FAILURE);
+        
+}
+*/ 
