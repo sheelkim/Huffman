@@ -24,11 +24,7 @@ int compter_caractere(char *fichier)
 
 ///C
 Liste occurrence_texte(char *fichier)
-<<<<<<< HEAD
-{   
-=======
 {
->>>>>>> aa41da901fc84e0d076ee20ddd4ebc5289787460
     return NULL;
 }
 
