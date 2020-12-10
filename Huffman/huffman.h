@@ -1,10 +1,11 @@
-/*********************************************************************************************
- * \file huffman.h
- * \brief Header of the library allowing the management of huffman
- * 
- * \autor : Kim Ly TEK, Chloe ANGLARD, Camille BENEZECH, Camille PALLUD
- * \date : december 2020
- * ********************************************************************************************/
+/*****************************************************************//**
+ * \file   huffman.h
+ * \brief  Header of the library allowing the management of huffman
+ *
+ * \author Kim Ly TEK, Chloe ANGLARD, Camille BENEZECH, Camille PALLUD
+ * \date   December 2020
+ *********************************************************************/
+
 
 #ifndef HUFFMAN_H
 #define HUFFMAN_H

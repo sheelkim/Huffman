@@ -1,11 +1,10 @@
-/*********************************************************************************************
- * \file arbre.h
- * \brief Header of the library allowing the management of arbre
- * 
- * \autor : Kim Ly TEK, Chloe ANGLARD, Camille BENEZECH, Camille PALLUD
- * \date : december 2020
- * ********************************************************************************************/
-
+/*****************************************************************//**
+ * \file   arbre.h
+ * \brief  Header of the library allowing the management of arbre
+ *
+ * \author Kim Ly TEK, Chloe ANGLARD, Camille BENEZECH, Camille PALLUD
+ * \date   December 2020
+ *********************************************************************/
 #ifndef ARBRE_H
 #define ARBRE_H
 /**

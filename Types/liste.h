@@ -1,9 +1,11 @@
-/*********************************************************************************************
- * \file liste.h
- * \brief Header of the library allowing the management of liste
- * 
- * \autor : Kim Ly TEK, Chloe ANGLARD, Camille BENEZECH, Camille PALLUD
- ***********************************************************************************************/
+/*****************************************************************//**
+ * \file   liste.h
+ * \brief  Header of the library allowing the management of liste
+ *
+ * \author Kim Ly TEK, Chloe ANGLARD, Camille BENEZECH, Camille PALLUD
+ * \date   December 2020
+ *********************************************************************/
+
 #ifndef LISTE_H
 #define LISTE_H
 
