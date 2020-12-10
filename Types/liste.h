@@ -20,17 +20,16 @@ typedef struct Element{
 }Element;
 typedef struct Element *Liste;
 
-/** 
+/**
  * \brief Function to create a Element which is a node
- *          \n Example :
- *         \code{.c}
- * \return a Element
+ * \param element
+ * \return an element
  */
 Element* creer_element(Noeud* noeud);
 
 /** 
  * \brief Function to show a list
- *  *        \n Example :
+ *         \n Example :
  *         \code{.c}
  * \return nothing
  */
