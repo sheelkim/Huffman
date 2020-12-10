@@ -18,12 +18,18 @@
 #include "arbre.h"
 /**
  * typedef struct Element
- * \brief a Element of a list which contain the nodes with his next pointer
+ * @brief a Element of a list which contain the nodes with his next pointer
  */
 typedef struct Element{
         Noeud *noeud; /**< the node */
         struct Element *suiv; /**< the pointer next of Element */
 }Element;
+
+/**
+ * \typedef Element *Liste
+ * @brief a simple typedef to facilitate the use of Liste
+ * 
+ */
 typedef struct Element *Liste;
 
 /**
