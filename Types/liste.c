@@ -3,10 +3,10 @@
 
 #include "liste.h"
 
-Element* creer_element(Noeud *noeud)
-{   
-    return NULL;
+void creer_element(Liste element)
+{
 }
 
-void afficher_liste(Liste liste){
+void ajouter_element(Liste* liste, Element* element)
+{
 }

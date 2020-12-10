@@ -23,12 +23,7 @@ typedef struct Element *Liste;
  * \return a Element
  */
 Element* creer_element(Noeud* noeud);
-
-/** 
- * \brief Function to show the list 
- * \return nothing 
- */
-void afficher_liste(Liste liste);
+extern void afficher_liste(Liste liste);
 
 #endif // LISTE_H
 
