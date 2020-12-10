@@ -3,7 +3,7 @@
 
 #include "liste.h"
 
-void creer_element(Liste element)
+Element* creer_element(Noeud* noeud)
 {
 }
 
