@@ -1,5 +1,5 @@
 /*****************************************************************//**
- * \file   huffman.h
+* \file c:\Users\kimly\OneDrive\Bureau\Huffman\Huffman\huffman.h
  * \brief  Header of the library allowing the management of huffman
  *
  * \author Kim Ly TEK, Chloe ANGLARD, Camille BENEZECH, Camille PALLUD
@@ -8,7 +8,13 @@
 
 
 #ifndef HUFFMAN_H
+
+/*!
+* \def HUFFMAN_H
+* Description
+*/
 #define HUFFMAN_H
+/*! Importation of librairies*/
 #include "../Types/arbre.h"
 #include "../Types/liste.h"
 /** 

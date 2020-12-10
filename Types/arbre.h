@@ -1,11 +1,16 @@
 /*****************************************************************//**
- * \file   arbre.h
+* \file c:\Users\kimly\OneDrive\Bureau\Huffman\Types\arbre.h
  * \brief  Header of the library allowing the management of arbre
  *
  * \author Kim Ly TEK, Chloe ANGLARD, Camille BENEZECH, Camille PALLUD
  * \date   December 2020
  *********************************************************************/
 #ifndef ARBRE_H
+
+/*!
+* \def ARBRE_H
+* Description
+*/
 #define ARBRE_H
 /**
  * typedef struct Noeud

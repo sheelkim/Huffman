@@ -1,5 +1,5 @@
 /*****************************************************************//**
- * \file   liste.h
+* \file c:\Users\kimly\OneDrive\Bureau\Huffman\Types\liste.h
  * \brief  Header of the library allowing the management of liste
  *
  * \author Kim Ly TEK, Chloe ANGLARD, Camille BENEZECH, Camille PALLUD
@@ -7,8 +7,14 @@
  *********************************************************************/
 
 #ifndef LISTE_H
+
+/*!
+* \def LISTE_H
+* Description
+*/
 #define LISTE_H
 
+/*! Importation of librairies*/
 #include "arbre.h"
 /**
  * typedef struct Element
