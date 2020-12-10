@@ -20,6 +20,8 @@ typedef struct Noeud{
 
 /** 
  * \brief Function to create a node with his letter and occurences
+ *         \n Example :
+ *         \code{.c}
  * \return a node 
  */
 Noeud* creer_noeud(char lettre, int occurrence);

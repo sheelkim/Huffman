@@ -22,9 +22,18 @@ typedef struct Element *Liste;
 
 /** 
  * \brief Function to create a Element which is a node
+ *          \n Example :
+ *         \code{.c}
  * \return a Element
  */
 Element* creer_element(Noeud* noeud);
+
+/** 
+ * \brief Function to show a list
+ *  *        \n Example :
+ *         \code{.c}
+ * \return nothing
+ */
 extern void afficher_liste(Liste liste);
 
 #endif // LISTE_H
