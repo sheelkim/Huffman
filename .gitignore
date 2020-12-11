@@ -1,9 +1,6 @@
 # Prerequisites
 *.d
 
-#Doxygen documentation 
-Doxygen
-
 # Object files
 *.o
 *.ko
